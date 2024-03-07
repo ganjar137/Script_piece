@@ -33,9 +33,9 @@ public class ImageSlicer : MonoBehaviour
                 SpriteRenderer spriteRenderer = puzzlePiece.AddComponent<SpriteRenderer>();
                 spriteRenderer.sprite = Sprite.Create(piece, new Rect(0, 0, piece.width, piece.height), new Vector2(0.5f, 0.5f));
 
-                // Menambahkan collider
+            
                 BoxCollider2D collider = puzzlePiece.AddComponent<BoxCollider2D>();
-                // Atur ukuran collider sesuai dengan ukuran potongan gambar
+              
                 collider.size = new Vector2(pieceWidth, pieceHeight);
 
                 puzzlePiece.transform.localScale = new Vector3(1f / columns, 1f / rows, 1f);
